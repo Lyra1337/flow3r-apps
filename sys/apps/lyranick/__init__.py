@@ -12,7 +12,8 @@ import math
 class Configuration:
     def __init__(self) -> None:
         self.name = "Lyra"
-        self.size: int = 100
+        self.alt_name = "Tom"
+        self.size: int = 110
         self.font: int = 6
 
     @classmethod
@@ -41,7 +42,12 @@ class NickApp(Application):
         ctx.move_to(0, 0)
         ctx.save()
         ctx.scale(abs(self._scale), 1)
-        ctx.text(self._config.name)
+        
+        if self._scale < 0:
+            ctx.text(self._config.name)
+        else:
+            ctx.text(self._config.alt_name)
+
         ctx.restore()
 
         leds.set_hsv(int(self._led), abs(self._scale) * 360, 1, 0.2)
