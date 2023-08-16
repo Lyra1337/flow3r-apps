@@ -1,6 +1,6 @@
 [app]
 name = "Flashlight"
-menu = "Apps"
+menu = "Badge"
 
 [entry]
 class = "Flashlight"
@@ -8,4 +8,4 @@ class = "Flashlight"
 [metadata]
 author = "Lyra"
 license = "LGPL-3.0-only"
-url = "https://git.flow3r.garden/flow3r/flow3r-firmware"
+url = "https://github.com/lyra1337/flow3r-apps"
