@@ -1,0 +1,11 @@
+[app]
+name = "Blacklight"
+menu = "Badge"
+
+[entry]
+class = "Blacklight"
+
+[metadata]
+author = "Lyra"
+license = "LGPL-3.0-only"
+url = "https://github.com/lyra1337/flow3r-apps"
